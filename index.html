@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>
+            My first website
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+        
+        <style>
+            .row{
+                width:1080px;
+                margin: 30px auto 30px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:100px;
+            }
+            h1 {
+                text-align: center;
+                color: #2F4E41;
+            }
+            h2 {
+                text-align: center;
+                color: #4f7264;
+            }
+          
+        </style>
+    </head>
+
+    <body style="background-color:rgb(25, 234, 150);">
+       
+     
+        <div class="row">
+            <div class="image-container"><img id="img1" src="IMG/Fixer Upper Lineart.png" height="200" width="160" onmouseover="this.src='IMG/Fixer Upper Colored.png';" onmouseout="this.src='IMG/Fixer Upper Lineart.png';"/></div>
+            <div class="image-container"><img id="img2" src="IMG/Open Concept Lineart.png" height="200" width="160" onmouseover="this.src='IMG/Open Concept Colored.png';" onmouseout="this.src='IMG/Open Concept Lineart.png';"/></div>
+            <div class="image-container"><img id="img3" src="IMG/Outdoor Lineart.png" height="200" width="160" onmouseover="this.src='IMG/Outdoor Colored.png';" onmouseout="this.src='IMG/Outdoor Lineart.png';"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img4" src="IMG/Kitchen Lineart .png" height="200" width="160" onmouseover="this.src='IMG/Kitchen Colored.png';" onmouseout="this.src='IMG/Kitchen Lineart .png';"/></div>
+            <div class="image-container"><img id="img5" src="IMG/Location Lineart.png" height="200" width="200" onmouseover="this.src='IMG/Location Colored.png';" onmouseout="this.src='IMG/Location Lineart.png';"/></div>
+            <div class="image-container"><img id="img6" src="IMG/Storage Lineart.png" height="190" width="250" onmouseover="this.src='IMG/Storage Colored.png';" onmouseout="this.src='IMG/Storage Lineart.png';"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img7" src="IMG/Public Transport Lineart.png" height="200" width="200" onmouseover="this.src='IMG/Public Transport Colored.png';" onmouseout="this.src='IMG/Public Transport Lineart.png';"/></div>
+            <div class="image-container"><img id="img8" src="IMG/Turn Key Lineart.png" height="200" width="220" onmouseover="this.src='IMG/Turn Key Colored.png';" onmouseout="this.src='IMG/Turn Key Lineart.png';"/></div>
+            <div class="image-container"><img id="img9" src="IMG/Pet Friendly Lineart.png" height="200" width="200" onmouseover="this.src='IMG/Pet Friendly Colored.png';" onmouseout="this.src='IMG/Pet Friendly Lineart.png';"/></div>
+        </div>
+        
+        <script>
+            var sound1 = new buzz.sound("sound/hammer.mp3");
+            var sound2 = new buzz.sound("SOUND/Open Concept Space.mp3");
+            var sound3 = new buzz.sound("SOUND/BBQ Outdoor Area.mp3");
+            var sound4 = new buzz.sound("SOUND/Kitchen.mp3");
+            var sound5 = new buzz.sound("SOUND/Location Ping.mp3");
+            var sound6 = new buzz.sound("SOUND/Boxes Storage.mp3");
+            var sound7 = new buzz.sound("SOUND/Tram Sound Public Transport.mp3");
+            var sound8 = new buzz.sound("SOUND/Turn Key.mp3");
+            var sound9 = new buzz.sound("SOUND/Dog Bark Pet Friendly.mp3");
+            
+            window.onload = function() {
+                document.getElementById('img1').addEventListener('click', function () {sound1.play(); });
+                document.getElementById('img2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('img3').addEventListener('click', function () {sound3.play(); });
+                document.getElementById('img4').addEventListener('click', function () {sound4.play(); });
+                document.getElementById('img5').addEventListener('click', function () {sound5.play(); }); 
+                document.getElementById('img6').addEventListener('click', function () {sound6.play(); }); 
+                document.getElementById('img7').addEventListener('click', function () {sound7.play(); }); 
+                document.getElementById('img8').addEventListener('click', function () {sound8.play(); }); 
+                document.getElementById('img9').addEventListener('click', function () {sound9.play(); });
+            }  
+            
+        </script>
+        
+    </body>
+</html>
